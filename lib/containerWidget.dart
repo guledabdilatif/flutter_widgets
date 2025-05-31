@@ -14,7 +14,6 @@ class Containerwidget extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Container Widget"),
-
           centerTitle: true,
           titleTextStyle: TextStyle(fontSize: 34, color: Colors.white),
           backgroundColor: Colors.blue,

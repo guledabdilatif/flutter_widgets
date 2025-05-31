@@ -15,7 +15,7 @@ class Appbarwidget extends StatelessWidget {
           centerTitle: true,
           titleTextStyle: TextStyle(color: Colors.white, fontSize: 16),
           elevation: 0,
-          iconTheme: IconThemeData(),
+          // iconTheme: IconThemeData(),
           leading: IconButton(
             onPressed: () {},
             icon: Icon(Icons.menu, color: Colors.white),
