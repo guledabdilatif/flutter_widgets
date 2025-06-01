@@ -11,11 +11,15 @@ class Animatedcontainerwidget extends StatefulWidget {
 class _AnimatedcontainerwidgetState extends State<Animatedcontainerwidget> {
   double boxheight = 100;
   double boxwidth = 100;
+  double x = 1;
+  double y = 1;
   var boxcolor = Colors.deepPurple;
   void expandBox() {
     setState(() {
-      boxheight = 200;
-      boxwidth = 200;
+      // boxheight = 300;
+      // boxwidth = 300;
+      x = 0;
+      y = 0;
       boxcolor = Colors.amber;
     });
   }
@@ -24,16 +28,16 @@ class _AnimatedcontainerwidgetState extends State<Animatedcontainerwidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepPurpleAccent,
-      body: Center(
-        child: GestureDetector(
-          onTap: expandBox,
-          child: AnimatedContainer(
-            duration: Duration(milliseconds: 500),
-            color: boxcolor,
-            height: boxheight,
-            width: boxwidth,
-            child: Center(child: Text("Animated Container")),
-          ),
+      body: GestureDetector(
+        onTap: expandBox,
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 500),
+          alignment: Alignment(x, y),
+          curve: Curves.easeInOut,
+          // color: boxcolor,
+          // height: boxheight,
+          // width: boxwidth,
+          child: Container(height: 100, width: 100, color: Colors.pink),
         ),
       ),
     );
