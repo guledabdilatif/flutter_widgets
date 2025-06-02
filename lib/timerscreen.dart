@@ -34,9 +34,9 @@ class _timerscreenState extends State<timerscreen> {
               style: TextStyle(fontSize: 50),
             ),
             MaterialButton(
-              child: Text("PRESS", style: TextStyle(color: Colors.white)),
               color: Colors.blue,
               onPressed: startCountdown,
+              child: Text("PRESS", style: TextStyle(color: Colors.white)),
             ),
           ],
         ),

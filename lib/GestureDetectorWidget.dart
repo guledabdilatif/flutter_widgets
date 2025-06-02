@@ -30,7 +30,11 @@ class _GesturedetectorwidgetState extends State<Gesturedetectorwidget> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
-                "tapped" + " " + numberoftimestapped.toString() + " " + "times",
+                "tapped"
+                        " " +
+                    numberoftimestapped.toString() +
+                    " " +
+                    "times",
               ),
               GestureDetector(
                 onTap: increment,

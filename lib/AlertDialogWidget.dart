@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Alertdialogwidget extends StatefulWidget {
@@ -45,9 +44,9 @@ class _AlertdialogwidgetState extends State<Alertdialogwidget> {
           borderRadius: BorderRadius.circular(30),
           child: MaterialButton(
             padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
-            child: Text("SHOW DIALOG", style: TextStyle(color: Colors.white)),
             onPressed: showdialog,
             color: Colors.red,
+            child: Text("SHOW DIALOG", style: TextStyle(color: Colors.white)),
           ),
         ),
       ),
