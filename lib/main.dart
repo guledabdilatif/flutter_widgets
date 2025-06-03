@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/PageViewWidget.dart';
-import 'package:flutter_widgets/stackWidget.dart';
+import 'package:flutter_widgets/slider_widget.dart';
+// import 'package:flutter_widgets/PageViewWidget.dart';
+// import 'package:flutter_widgets/stackWidget.dart';
+import 'package:flutter_widgets/textfield_widget.dart';
 // import 'package:flutter_widgets/AnimatedContainerWidget.dart';
 // import 'package:flutter_widgets/AppBarWidget.dart';
 // import 'package:flutter_widgets/BottomNavBar.dart';
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Stackwidget());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SliderWidget());
   }
 }
 
