@@ -29,13 +29,7 @@ class _GesturedetectorwidgetState extends State<Gesturedetectorwidget> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                "tapped"
-                        " " +
-                    numberoftimestapped.toString() +
-                    " " +
-                    "times",
-              ),
+              Text("tapped $numberoftimestapped times"),
               GestureDetector(
                 onTap: increment,
                 child: Container(

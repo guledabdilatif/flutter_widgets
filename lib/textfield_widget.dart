@@ -22,7 +22,7 @@ class _TextfieldWidgetState extends State<TextfieldWidget> {
 
           children: [
             Center(
-              child: Container(height: 400, width: 400, child: Text(userPost)),
+              child: SizedBox(height: 400, width: 400, child: Text(userPost)),
             ),
 
             TextField(
