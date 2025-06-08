@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/DatePicker.dart';
 import 'package:flutter_widgets/ListViewBuilder.dart';
 import 'package:flutter_widgets/TimePickerWidget.dart';
+import 'package:flutter_widgets/slideable_widget.dart';
 import 'package:flutter_widgets/slider_widget.dart';
+import 'package:flutter_widgets/slideto_widget.dart';
 // import 'package:flutter_widgets/PageViewWidget.dart';
 // import 'package:flutter_widgets/stackWidget.dart';
 // import 'package:flutter_widgets/AnimatedContainerWidget.dart';
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(primaryColor: Colors.red),
-      home: Listviewbuilder(),
+      home: SlidetoWidget(),
     );
   }
 }
